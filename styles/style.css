@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #242424;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.profile-pic img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #f5f5f5;
+    margin-bottom: 10px;
+}
+
+.role {
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #999999;
+}
+
+.contact-info p strong {
+    display: block;
+    color: #f5f5f5;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: #181818;
+}
+
+.about, .what-i-do {
+    margin-bottom: 40px;
+}
+
+.about h2, .what-i-do h2 {
+    color: #f5b042;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f5b042;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.about p {
+    margin-bottom: 20px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #333333;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.service h3 {
+    color: #f5b042;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.service p {
+    color: #cccccc;
+}
+
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+    }
+
+    .service {
+        flex: 1 1 100%;
+    }
+}
